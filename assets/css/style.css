@@ -1,7 +1,8 @@
 /*This will be my first scss file */
 /*First package of variables used through the file*/
 html {
-  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif;
+}
 
 body {
   font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif;
@@ -11,7 +12,40 @@ body {
   font-size: 1em;
   color: #202528;
   line-height: 1.5;
-  text-align: center; }
+  text-align: center;
+}
+
+nav, .try-free, .sign-in {
+  display: inline;
+}
+
+nav .menu-header .menu-item, .try-free .menu-header .menu-item, .sign-in .menu-header .menu-item, nav .right-elements .menu-item, .try-free .right-elements .menu-item, .sign-in .right-elements .menu-item {
+  display: inline;
+  word-spacing: 10px;
+}
+
+nav .menu-header, .try-free .menu-header, .sign-in .menu-header {
+  padding: 0;
+  display: inline;
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+
+nav .menu-header .menu-item .menu-tab, .try-free .menu-header .menu-item .menu-tab, .sign-in .menu-header .menu-item .menu-tab {
+  display: inline-block;
+}
+
+nav .right-elements, .try-free .right-elements, .sign-in .right-elements {
+  display: inline;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+nav .right-elements .menu-item .menu-tab, .try-free .right-elements .menu-item .menu-tab, .sign-in .right-elements .menu-item .menu-tab {
+  display: inline-block;
+}
 
 header {
   padding: 1em;
@@ -21,75 +55,63 @@ header {
   right: 0;
   text-align: left;
   width: 100%;
-  height: 40px; }
+  height: 40px;
+}
 
-nav {
-  display: inline; }
+header .logo-place {
+  text-decoration: none;
+}
 
-h1 {
+header .logo-place img {
+  float: left;
+}
+
+h1, h2 {
   font-size: 2.650em;
   text-align: center;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 h2 {
   font-size: 2em;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
-.logo {
-  float: left; }
-
-.logo-place {
-  text-decoration: none; }
-
-.menu-header {
-  padding: 0;
-  display: inline;
-  position: absolute;
-  left: 200px;
-  top: 10px; }
-
-.menu-item {
-  display: inline;
-  word-spacing: 10px; }
-
-.menu-tab {
-  display: inline-block; }
-
-#try-free {
+.try-free, .sign-in {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1px solid black;
+          order: 1px solid black;
+  word-spacing: normal;
+}
+
+.try-free {
   background-color: #3F9BF8;
   color: #fff;
-  border: 1px solid black;
-  word-spacing: normal; }
+}
 
-#sign-in {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+.sign-in {
   background-color: white;
-  border: 1px solid black;
-  word-spacing: normal; }
-
-.right-elements {
-  display: inline;
-  float: right;
-  position: absolute;
-  right: 20px;
-  top: 10px; }
+}
 
 .top-page {
-  text-align: center; }
+  text-align: center;
+}
 
 .black-boxes {
-  background-color: #3F4655; }
+  background-color: #3F4655;
+}
 
 .main-title {
-  font-weight: 300px; }
+  font-weight: 300px;
+}
 
 .h2-title {
   max-width: 720px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .text {
   font-size: 1.5em;
@@ -97,7 +119,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   font-family: freight-text-pro,Georgia,sans-serif;
-  text-align: center; }
+  text-align: center;
+}
 
 #try30days {
   background-color: #3F9BF8;
@@ -105,59 +128,75 @@ h2 {
   border: 1px solid #000000;
   border-radius: 5px;
   font-weight: 600;
-  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif;
+}
 
 .credit-card {
-  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif;
+  font-family: .credit-card font-family;
   font-weight: 400;
-  font-size: .575em; }
+  font-size: .575em;
+}
 
 .bck-scrn {
   background: transparent url("deco-icons-hero.png") no-repeat;
-  background-size: 1610px 250px; }
+  background-size: 1610px 250px;
+}
 
 .screenshot {
   width: 900px;
   height: 530px;
   position: relative;
-  right: 80px; }
+  right: 80px;
+}
 
 .choice {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .monthly {
   width: 50%;
-  border-right: 1px solid grey; }
+  border-right: 1px solid grey;
+}
 
 .server {
-  width: 50%; }
+  width: 50%;
+}
 
 .price-button {
   color: white;
   background-color: #3092f5;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px; }
+  padding: 5px;
+}
 
 .cloud-server {
   background-color: white;
-  padding: 2em 6em; }
+  padding: 2em 6em;
+}
 
 .customers {
   background-color: #E9EDF2;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
-  text-align: center; }
+  text-align: center;
+}
 
-.all-brands {
+.customers .all-brands {
   width: 1300px;
-  height: 130px; }
+  height: 130px;
+}
 
 .free-month-register {
   background-color: #fff;
   padding-bottom: 6em;
-  border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
 
 form {
   background-color: #e9edf2;
@@ -168,7 +207,8 @@ form {
   padding: 2% 2% 0 2%;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+}
 
 .button-form {
   text-align: center;
@@ -177,7 +217,8 @@ form {
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
-  width: auto; }
+  width: auto;
+}
 
 input.inform {
   width: 96%;
@@ -185,60 +226,74 @@ input.inform {
   font-size: 1.1rem;
   padding: 8px;
   border: 1px solid #1f1f1f;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .enjoy {
-  text-align: center; }
+  text-align: center;
+}
 
 .active-sec {
   color: #727C8E;
   font-weight: 400;
-  font-size: .850em; }
+  font-size: .850em;
+}
 
 a:visited {
-  color: #727C8E; }
+  color: #727C8E;
+}
 
 footer {
   background-color: #3F4655;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 
-.footer-container {
+footer .footer-container {
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  max-width: 70em; }
+  max-width: 70em;
+}
 
-.footer-menu-item {
-  font-weight: 600; }
+footer .footer-container ul {
+  list-style: none;
+}
 
-.footer-menu-link {
+footer .footer-container .footer-list-heading {
+  font-size: .875em;
+  font-weight: 600;
+  color: grey;
+}
+
+footer .footer-container .footer-menu-item {
+  font-weight: 600;
+}
+
+footer .footer-container .footer-menu-item .footer-menu-link {
   color: #fff;
   text-decoration: none;
   font-size: .875em;
-  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+footer .footer-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  word-spacing: 5px;
+}
 
 .footer-link {
   color: #fff;
   text-decoration: none;
   font-size: .875em;
-  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif; }
+  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif;
+}
 
 footer, a:hover {
-  color: #0F4655; }
-
-.footer-list-heading {
-  font-size: .875em;
-  font-weight: 600;
-  color: grey; }
-
-footer, ul {
-  list-style: none; }
-
-.footer-text {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif;
-  text-decoration: none;
-  word-spacing: 5px; }
-
+  color: #0F4655;
+}
 /*# sourceMappingURL=style.css.map */
